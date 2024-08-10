@@ -10,6 +10,9 @@ import { ServicesComponent } from './pages/services/services.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { SubscriptionComponent } from './pages/subscription/subscription.component';
 import { ServicedetailsComponent } from './pages/services/servicedetails/servicedetails.component';
+import { FeedbackDetailsComponent } from './pages/feedback/feedback-details/feedback-details.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ServicedetailsComponent } from './pages/services/servicedetails/service
     ServicesComponent,
     FeedbackComponent,
     SubscriptionComponent,
-    ServicedetailsComponent
+    ServicedetailsComponent,
+    FeedbackDetailsComponent,
+    ProfileComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

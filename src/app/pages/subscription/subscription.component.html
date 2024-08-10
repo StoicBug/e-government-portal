@@ -1,1 +1,91 @@
-<p>subscription works!</p>
+<div class="p-6">
+  <a class="flex items-center gap-5 my-10" routerLink="/">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+    </svg>
+    <h1 class="text-3xl font-bold text-gray-800">Notifications</h1>
+  </a>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Notifications List -->
+    <div class="md:col-span-2">
+      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Recent Notifications</h2>
+        <ul>
+          <li class="border-b py-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-semibold text-gray-800">New Service Available</p>
+                <p class="text-sm text-gray-600">Online passport renewal is now available.</p>
+              </div>
+              <span class="text-sm text-gray-500">2 hours ago</span>
+            </div>
+          </li>
+          <li class="border-b py-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-semibold text-gray-800">Feedback Response</p>
+                <p class="text-sm text-gray-600">Your recent feedback has been addressed.</p>
+              </div>
+              <span class="text-sm text-gray-500">1 day ago</span>
+            </div>
+          </li>
+          <li class="py-4">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="font-semibold text-gray-800">Scheduled Maintenance</p>
+                <p class="text-sm text-gray-600">The portal will be under maintenance on July 15.</p>
+              </div>
+              <span class="text-sm text-gray-500">3 days ago</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Notification Preferences -->
+    <div class="md:col-span-1">
+      <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4">Notification Settings</h2>
+        <form>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+              Email Address
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your email" value="user@example.com">
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">
+              Phone Number (for SMS)
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="tel" placeholder="Your phone number" value="+1234567890">
+          </div>
+          <div class="mb-4">
+            <p class="block text-gray-700 text-sm font-bold mb-2">Notification Categories</p>
+            <div class="flex items-center mb-2">
+              <input type="checkbox" id="service-updates" class="mr-2" checked>
+              <label for="service-updates" class="text-sm text-gray-700">Service Updates</label>
+            </div>
+            <div class="flex items-center mb-2">
+              <input type="checkbox" id="feedback-responses" class="mr-2" checked>
+              <label for="feedback-responses" class="text-sm text-gray-700">Feedback Responses</label>
+            </div>
+            <div class="flex items-center mb-2">
+              <input type="checkbox" id="emergency-alerts" class="mr-2" checked>
+              <label for="emergency-alerts" class="text-sm text-gray-700">Emergency Alerts</label>
+            </div>
+            <div class="flex items-center">
+              <input type="checkbox" id="community-events" class="mr-2">
+              <label for="community-events" class="text-sm text-gray-700">Community Events</label>
+            </div>
+          </div>
+          <div class="flex items-center justify-between">
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+              Save Preferences
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
